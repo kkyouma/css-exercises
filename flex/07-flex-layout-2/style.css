@@ -4,6 +4,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
@@ -12,6 +13,8 @@ body {
   color: white;
   display: flex;
   align-items: center;
+  padding-left: 16px;
+
 }
 
 .footer {
@@ -27,14 +30,53 @@ body {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  display: flex;
+  flex-shrink: 0;
+  padding: 16px;
+
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  flex: 0 0 auto;
+  padding: 1em;
+  width: 300px;
+  height: 300px;
 }
 
 .content {
   display: flex;
+  flex: 1;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  gap: 32px;
+  padding: 32px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: aliceblue;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.header-text {
+  font-weight: 900px;
+  font-size: 32px;
 }
